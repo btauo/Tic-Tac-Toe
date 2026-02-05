@@ -57,6 +57,7 @@ if(whoWePlayin !== 'Friend') MoveYourAss();
 function defaultClick(element, Who){
   element.disabled = true;
   const audio = document.querySelector('.audioOnClick');
+  audio.volume = 0.5;
   audio.currentTime = 0; 
   if(audioOn === 'On') audio.play();   
   element.classList.remove('buttonHoverX'); 
