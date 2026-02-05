@@ -79,7 +79,6 @@ function defaultClick(element, Who){
       element.classList.add('TextO');
   }
 }
-
 let firstMoveGame = true;
 let Xmoving = firstMoveGame;
 
@@ -357,6 +356,14 @@ allemoji.forEach((element) =>{
   });
 });
 
+let addHtmlEmoji = '';
+const panelOfEmoji = document.querySelector('.emojiList');
+for(let i = 1; i <= 16; i++){
+  addHtmlEmoji += `
+  <img src="../emoji-static/${i}.png" alt="" class="emojiDisplay" data-values="${i}">
+  `;
+}
+panelOfEmoji.innerHTML = addHtmlEmoji;
 /*
 1===Player move
 2===Computer move
