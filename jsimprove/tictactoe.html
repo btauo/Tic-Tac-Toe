@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="tictactoe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Tic-Tac-Toe</title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+
+
+    <!--Tic-tac-toe-->
+    <header>
+      <div class="headerTemka">
+        <p class="nameOfSome">Mr.Dayn</p>
+        <div class="timer-player css-timer"></div>
+      </div>
+      <img src="../img/avatar.png" class="img-avatar" alt="avatar">
+      <span class="scorePlayer css-score"></span>
+      <span class="scoreComputer css-score"></span>
+      <img src="../img/robot.png" class="img-avatar" alt="avatar">
+      <div class="headerTemka">
+        <p class="nameOfSome">Mr.Robot</p>
+        <div class="timer-computer css-timer"></div>
+      </div>
+    </header>
+    <p class="gameStatusText"></p>
+    <div class="emojiPicked"></div>
+
+    <audio src="../audio/Move.mp3" class="audioOnClick"></audio>
+
+    <div class="mainDiv">
+      <div class="buttonTic">
+        <button class="button-game left-border top-border"></button>
+        <button class="button-game top-border"></button>
+        <button class="button-game top-border right-border"></button>
+      </div>
+      <div class="buttonTic">
+        <button class="button-game left-border"></button>
+        <button class="button-game"></button>
+        <button class="button-game right-border"></button>
+      </div>
+      <div class="buttonTic">
+        <button class="button-game left-border bottom-border"></button>
+        <button class="button-game bottom-border"></button>
+        <button class="button-game bottom-border right-border"></button>
+      </div>
+    </div>
+
+    <!--MODAL-->
+    <div class="main-model">
+      <div class="model-window">          
+        <div class="layot">
+          <header class="headerSettings">
+            <h2>Settings</h2>
+            <button class="close-button">
+              <svg viewBox="0 0 100 100" class="close-svg" xmlns="http://www.w3.org/2000/svg">
+              <line x1="80" y1="80" x2="10" y2="10" stroke="white"/>
+              <line x1="10" y1="80" x2="80" y2="10" stroke="white"/>
+              </svg>
+            </button>
+          </header>          
+          <button class="button-settings" data-values='["Easy", "Medium","Hard"]'>
+            <span><i class="fas fa-brain"></i></span>
+            <span>Game difficulty</span>
+            <span class="display-element"></span>
+          </button>
+
+          <button class="button-settings" data-values='["You", "Bot", "Random"]'>
+            <span><i class="fas fa-user"></i></span>
+            <span>First move</span>
+            <span class="display-element"></span>
+          </button>
+
+          <button class="button-settings" data-values='["Friend", "Bot"]'>
+            <span><i class="fas fa-robot"></i></span>
+            <span>Against who? </span>             
+            <span class="display-element"></span>
+          </button>
+
+          <button class="button-settings" data-values='["1min", "30s", "unlimited"]'>
+            <span><i class="fas fa-clock"></i></span>
+            <span>Time</span>
+            <span class="display-element"></span>
+          </button>
+
+          <button class="button-settings" data-values='["On", "Off"]'>
+            <span><i class="fas fa-volume-high"></i></span>
+            <span>Sound</span>
+            <span class="display-element"></span>
+          </button>
+        </div>
+      </div>
+    </div>    
+    <div class="model-emoji">
+      <div class="emojiList">
+        <img src="../emoji-static/1.png" alt="" class="emojiDisplay" data-values="1">
+        <img src="../emoji-static/2.png" alt="" class="emojiDisplay" data-values="2">
+        <img src="../emoji-static/3.png" alt="" class="emojiDisplay" data-values="3">
+        <img src="../emoji-static/4.png" alt="" class="emojiDisplay" data-values="4">
+        <img src="../emoji-static/5.png" alt="" class="emojiDisplay" data-values="5">
+        <img src="../emoji-static/6.png" alt="" class="emojiDisplay" data-values="6">
+        <img src="../emoji-static/7.png" alt="" class="emojiDisplay" data-values="7">
+        <img src="../emoji-static/8.png" alt="" class="emojiDisplay" data-values="8">
+        <img src="../emoji-static/9.png" alt="" class="emojiDisplay" data-values="9">
+        <img src="../emoji-static/10.png" alt="" class="emojiDisplay" data-values="10">
+        <img src="../emoji-static/11.png" alt="" class="emojiDisplay" data-values="11">
+        <img src="../emoji-static/12.png" alt="" class="emojiDisplay" data-values="12">
+        <img src="../emoji-static/13.png" alt="" class="emojiDisplay" data-values="13">
+        <img src="../emoji-static/14.png" alt="" class="emojiDisplay" data-values="14">
+        <img src="../emoji-static/15.png" alt="" class="emojiDisplay" data-values="15">
+        <img src="../emoji-static/16.png" alt="" class="emojiDisplay" data-values="16">
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+      <div class="footer-div">
+        <button class="restartButton">Restart game</button>
+        <button class="restartButton resetButton">Reset score</button>
+        <img class="SettingsPopUp" src="../img/settings.png" alt="">
+        <img src="../emoji-static/1.png" alt="" class="emojiOpener">
+      </div>
+    </footer>
+    <script src="tictactoe.js"></script>
+  </body>
+</html>
